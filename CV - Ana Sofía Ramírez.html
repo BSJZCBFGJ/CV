@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CV - Ana Sofía Ramírez</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#f3f4f8; --card:#ffffff; --text:#222a3a; --muted:#5b6475; --accent:#2f6fed; --line:#dfe3ec;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#12151c;--card:#1c212c;--text:#e8ebf2;--muted:#a3abbb;--line:#2c3342;}
+}
+:root[data-theme="dark"]{--bg:#12151c;--card:#1c212c;--text:#e8ebf2;--muted:#a3abbb;--line:#2c3342;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);}
+*,*::before,*::after{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Poppins',Arial,sans-serif;line-height:1.6;}
+.cv{display:grid;grid-template-columns:280px 1fr;max-width:960px;margin:24px auto;background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.12);}
+.lateral{background:var(--accent);color:#fff;padding:32px 24px;text-align:center;transition:background .3s;}
+.lateral h2{color:#fff;border-color:rgba(255,255,255,.4);}
+.foto{width:160px;height:160px;border-radius:50%;border:5px solid #fff;background:#fff;margin:0 auto 12px;display:block;}
+.lateral ul{list-style:none;padding:0;margin:0;text-align:left;}
+.lateral li{margin:6px 0;font-size:.92rem;word-break:break-word;}
+.lateral a{color:#fff;}
+.principal{padding:32px;}
+h1{font-family:'Lora',Georgia,serif;font-size:2rem;margin:0 0 4px;}
+.lateral h1{font-size:1.4rem;color:#fff;}
+h2{font-family:'Lora',Georgia,serif;font-size:1.2rem;color:var(--accent);border-bottom:2px solid var(--line);padding-bottom:4px;margin:24px 0 10px;}
+.lateral h2{font-size:1.05rem;margin-top:22px;text-align:left;}
+.puesto{color:var(--muted);margin:0 0 12px;}
+.habilidades{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;}
+.habilidades li{background:var(--bg);border:1px solid var(--line);padding:4px 12px;border-radius:20px;font-size:.9rem;}
+.item{margin-bottom:12px;}
+.item strong{display:block;}
+.oculto{display:none;background:var(--bg);border-left:4px solid var(--accent);padding:10px 14px;border-radius:8px;margin-top:12px;}
+.oculto.visible{display:block;}
+.botones{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;}
+button{font-family:inherit;background:var(--accent);color:#fff;border:0;padding:10px 18px;border-radius:8px;cursor:pointer;font-size:.95rem;transition:transform .15s;}
+button:hover{transform:translateY(-2px);}
+.enlace{color:var(--accent);font-weight:600;}
+@media (max-width:700px){
+  .cv{grid-template-columns:1fr;margin:0;border-radius:0;}
+  .principal{padding:20px;}
+}
+</style>
+</head>
+<body>
+<div class="cv">
+  <aside class="lateral">
+    <svg class="foto" viewBox="0 0 160 160" role="img" aria-label="Foto de perfil ilustrada">
+      <rect width="160" height="160" fill="#dbe6ff"/>
+      <path d="M30 160c0-34 22-52 50-52s50 18 50 52z" fill="#2f6fed"/>
+      <circle cx="80" cy="72" r="30" fill="#f1c9a5"/>
+      <path d="M48 70c0-26 16-38 33-38s31 12 31 38c-8-14-18-20-32-20s-24 6-32 20z" fill="#3b2a20"/>
+      <circle cx="69" cy="74" r="3" fill="#222"/><circle cx="91" cy="74" r="3" fill="#222"/>
+      <path d="M70 87q10 8 20 0" stroke="#a5523a" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </svg>
+    <h1>Ana Sofía Ramírez</h1>
+    <p>Estudiante de Ingeniería en Sistemas</p>
+
+    <h2>Contacto</h2>
+    <ul>
+      <li>📧 ana.ramirez@correo.com</li>
+      <li>📱 +52 555 123 4567</li>
+      <li>📍 Hidalgo, México</li>
+      <li>🔗 <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+
+    <h2>Idiomas</h2>
+    <ul>
+      <li>Español: nativo</li>
+      <li>Inglés: intermedio (B1)</li>
+    </ul>
+  </aside>
+
+  <main class="principal">
+    <h1>Currículum Vitae</h1>
+    <p class="puesto">Desarrolladora web en formación</p>
+
+    <h2>Datos personales</h2>
+    <p>Soy una estudiante apasionada por la tecnología y el diseño web. Me gusta aprender cosas nuevas, trabajar en equipo y convertir ideas en páginas funcionales y atractivas.</p>
+    <p><strong>Fecha de nacimiento:</strong> 15 de marzo de 2005 &nbsp;|&nbsp; <strong>Nacionalidad:</strong> Mexicana</p>
+
+    <h2>Formación académica</h2>
+    <div class="item"><strong>Ingeniería en Sistemas Computacionales</strong><span>Universidad Tecnológica · 2023 – actualidad</span></div>
+    <div class="item"><strong>Bachillerato en Informática</strong><span>Preparatoria Estatal · 2020 – 2023</span></div>
+
+    <h2>Habilidades</h2>
+    <ul class="habilidades">
+      <li>HTML5</li><li>CSS3</li><li>JavaScript básico</li><li>Git y GitHub</li><li>Trabajo en equipo</li><li>Resolución de problemas</li>
+    </ul>
+
+    <h2>Proyectos</h2>
+    <div class="item"><strong>Página de mi mascota</strong><span>Sitio de una sola página con galería de fotos, hecho con HTML y CSS.</span></div>
+    <div class="item"><strong>Calculadora de propinas</strong><span>Aplicación pequeña en JavaScript que calcula el total a pagar por persona.</span></div>
+
+    <div class="botones">
+      <button id="btnMas" type="button">Mostrar dato curioso</button>
+      <button id="btnColor" type="button">Cambiar color</button>
+    </div>
+    <p id="curioso" class="oculto">🎯 Dato curioso: escribí mi primera línea de código a los 15 años y fue un "Hola, mundo" en JavaScript.</p>
+  </main>
+</div>
+
+<script>
+  // Botón 1: muestra u oculta información escondida
+  var btnMas = document.getElementById('btnMas');
+  var curioso = document.getElementById('curioso');
+  btnMas.addEventListener('click', function () {
+    var visible = curioso.classList.toggle('visible');
+    btnMas.textContent = visible ? 'Ocultar dato curioso' : 'Mostrar dato curioso';
+  });
+
+  // Botón 2: cambia el color principal del CV
+  var colores = ['#2f6fed', '#e0457b', '#12a37f', '#e68a00', '#7a4de8'];
+  var indice = 0;
+  document.getElementById('btnColor').addEventListener('click', function () {
+    indice = (indice + 1) % colores.length;
+    document.documentElement.style.setProperty('--accent', colores[indice]);
+  });
+</script>
+</body>
+</html>
